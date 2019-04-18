@@ -3,7 +3,7 @@
 Slack C2bot that executes commands and returns the output.
 
 Learn more by reading our full writeup:
-[Using Slack as a Malicious C2 Vector: MITRE ATT&CK – Web Service (T1102)](https://p16.praetorian.com/blog/using-slack-as-malicious-c2-vector-mitre-attack-web-service-t1102)
+[Using Slack as a Malicious C2 Vector: MITRE ATT&CK – Web Service (T1102)](https://p16.praetorian.com/blog/using-slack-as-c2-channel-mitre-attack-web-service-t1102)
 
 ## Setup
 
