@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nlopes/slack"
+	"github.com/slack-go/slack"
 )
 
 const (
@@ -71,8 +71,8 @@ func main() {
 	last := ""
 	for true {
 		handleSleep(SleepDuration)
-		historyParams := slack.HistoryParameters{Latest: "", Oldest: "0", Count: 2, Inclusive: false, Unreads: false}
-		history, err := api.GetChannelHistory(channel_id, historyParams)
+		historyParams := slack.GetConversationHistoryParameters{ChannelID: channel_id, Latest: "", Oldest: "0", Limit: 2, Inclusive: false}
+		history, err := api.GetConversationHistory(&historyParams)
 		if err != nil {
 			fmt.Printf("%s\n", err)
 			return
